@@ -4,11 +4,15 @@
         <link  href="lib/bootstrap.css" rel="stylesheet">
         <link  href="lib/fonts.googleapis.css?family=Comfortaa%3A400%2C700&ver=4.7.3" rel="stylesheet">
         <link  href="lib/font-awesome.min.css?ver=4.7.0" rel="stylesheet">
+        <link  href="assets/extra.css" rel="stylesheet">
         <link  href="assets/my-style.css" rel="stylesheet">
 
         <script src="lib/jquery/dist/jquery.min.js"></script>
+        <script src="lib/angular.js"></script>
+        <script src="lib/angular-ui-router.min.js"></script>
+        <script src="assets/app.js"></script>
     </head>
-    <body>
+    <body ng-app="myduitApp">
         <div class="header-top">
             <div class="container">
                 <div class="row">
@@ -48,17 +52,40 @@
                     <div class="navigation-menu col-xs-12 col-sm-7">
                         <nav class="navbar-collapse collapse navbar-ex1-collapse">
                             <ul id="menu-main-menu" class="nav navbar-nav">
-                                <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-12"><a title="Home" href="http://firstcredits.net/en/">Home</a></li>
-                                <li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a title="Types of Loan" href="http://firstcredits.net/en/jenis-pinjaman/">Types of Loan</a></li>
-                                <li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-53 current_page_item menu-item-61 active"><a title="Apply Now" href="http://firstcredits.net/en/mohon-sekarang/">Apply Now</a></li>
+                                <li id="menu-item-12" class="menu-item-home menu-item-12"><a title="Home" ui-sref="home">Home</a></li>
+                                <li id="menu-item-60" class="menu-item-60"><a title="Types of Loan" ui-sref="loantypes">Types of Loan</a></li>
+                                <li id="menu-item-61" class="current-menu-item page_item current_page_item menu-item-61 active"><a title="Apply Now" ui-sref="apply">Apply Now</a></li>
+                                <!--<li id="menu-item-12" class="menu-item-home menu-item-12"><a title="Home" href="http://firstcredits.net/en/">Home</a></li>
+                                <li id="menu-item-60" class="menu-item-60"><a title="Types of Loan" href="http://firstcredits.net/en/jenis-pinjaman/">Types of Loan</a></li>
+                                <li id="menu-item-61" class="current-menu-item page_item page-item-53 current_page_item menu-item-61 active"><a title="Apply Now" href="http://firstcredits.net/en/mohon-sekarang/">Apply Now</a></li>-->
                             </ul>
                         </nav>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="site-content">
+            <section class="_main-ui-view _content" ui-view></section>
+        </div>
+        <div class="site-footer">
+            <div class="container">
+                <div class="row">                                          
+                    <div class="footer-copyright col-xs-12 col-md-4">
+                        <div>Permit No: WP5150/10/01-6/290517<br> License No: WL5150/10/01-6/290517 issued by KPKT</div><div>Copyright ©2017 All rights reserved.</div>
+                    </div>
+                        <div style="line-height:1.4;padding:10px;" id="footer-address" class="col-xs-12 col-md-4">
+                        15, Lorong Brunei 3, <br>Pudu, 55100 Cheras, <br>Wilayah Persekutuan Kuala Lumpur
+                    </div>
+                    <div class="footer-contact col-xs-12 col-md-4">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        <i class="fa fa-wechat" aria-hidden="true"></i>
+                        <a href="tel:+60102079191">010 207 9191</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-to-top" style="display: block;"><i class="fa fa-angle-up"></i></div>
+        </div>
     </body>
-    <footer>
-
-    </footer>
 </html>
