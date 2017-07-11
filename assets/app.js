@@ -6,15 +6,15 @@ myduitApp.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('home', {
             url: '/home',
-            templateUrl: 'pages/home-en.html'
+            templateUrl: 'pages/home/home-en.html'
         })
         .state('loantypes', {
             url: '/loantypes',
-            templateUrl: 'pages/loantypes-en.html'     
+            templateUrl: 'pages/loantypes/loantypes-en.html'     
         })
         .state('apply', {
             url: '/apply',
-            templateUrl: 'pages/apply-en.html'     
+            templateUrl: 'pages/apply/apply-en.html'     
         });
 
 });
