@@ -1,0 +1,148 @@
+body {
+    font-size: 15px;
+    line-height: 2;
+    font-family: Comfortaa;
+    max-width: 1600px;
+    margin: 0 auto;
+    color: #191919;
+}
+
+a {
+	color:#333;
+    text-decoration: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor:pointer;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%; /* Corrects font size not being inherited in all browsers */
+  margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+  vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+  *vertical-align: middle; /* Improves appearance and consistency in all browsers */
+}
+.navbar-collapse {
+    clear: both;
+    float: right;
+    padding-right: 0;
+    padding-left: 15px;
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;
+    border-top: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+}
+@media (min-width: 768px) {
+    .navbar-collapse {
+        width: auto;
+        border-top: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .navbar-collapse.collapse {
+        display: block!important;
+        height: auto!important;
+        padding-bottom: 0;
+        overflow: visible!important;
+    }
+    .navbar-nav>li {
+        float: left;
+    }
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    line-height: 20px;
+}
+@media (min-width: 768px) {
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+.header-top{
+	background-color: #f78f27;
+	overflow: hidden;
+	font-size: 14px;
+	padding: 11px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+}
+.header-top .hotline {
+    max-width: 350px;
+    float: right;
+}
+.header-top .translation-select-div {
+	float: left;
+	line-height: 1;
+}
+.header-top .translation-select {
+    background: transparent;
+    border: 1px solid;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+.header-top .translation-select option {
+    background-color: #f78f27;
+}
+.header-top .contact-me-text-div {
+	float: right;
+}
+.header-top .contact-me-text {
+    list-style-type: none;
+    float: right;
+    margin: 0;
+    line-height: 1;
+    padding: 0;
+}
+.header-top .contact-me-text li {
+    display: inline-block;
+    margin: 0;
+    padding: 2px 20px;
+    border-left: 1px solid;
+}
+.header-top .contact-me-text li a {
+    color: #fff;
+}
+
+
+.header-middle {
+    margin-top: 3rem;
+}
+.header-middle .navigation-menu{
+	padding: 31px 15px;
+}
+.header-middle .navbar-nav {
+    float: left;
+    margin: 0;
+}
+.header-middle .navbar-nav>li{
+	margin-left: 50px;
+	margin-bottom: 0;
+}
+.header-middle .navbar-nav>li>a{
+	color: #f26222;
+	background-color: transparent;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	padding: 10px 0;
+}
+.header-middle .navbar-nav>li.active>a,
+.header-middle .navbar-nav>li>a:hover,
+.header-middle .navbar-nav>li>a:focus{
+	color: #f26222;
+	background-color: transparent;
+	border-top: 2px solid #f26222;
+	border-bottom: 2px solid #f26222;
+}
