@@ -1,10 +1,22 @@
 body {
     font-size: 15px;
     line-height: 2;
-    font-family: Comfortaa;
     max-width: 1600px;
     margin: 0 auto;
     color: #191919;
+    font-family: Comfortaa;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #f78f27;
+    margin: 0 0 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 a {
@@ -26,6 +38,40 @@ textarea {
   vertical-align: baseline; /* Improves appearance and consistency in all browsers */
   *vertical-align: middle; /* Improves appearance and consistency in all browsers */
 }
+
+.btn.btn-default {
+	border: 1px solid #f78f27;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #f78f27;
+    font-size: 18px;
+    padding: 11px 60px;
+    min-width: 136px;
+	text-transform: uppercase;
+	line-height: 1.3;
+	text-transform: uppercase;
+}
+.btn.btn-default.white{
+	color: #f78f27;
+	background-color: #fff;
+	border: 1px solid #fff;
+}
+
+.btn.btn-default:hover, .wpcf7-submit:hover{
+	border: 1px solid #f78f27;
+    color: #f78f27;
+    background-color: transparent;
+}
+
+.btn.btn-default.white:hover{
+	color: #fff;
+	background-color: #f78f27;
+	border: 1px solid #fff;
+}
+
+.text-white { color: white; }
+.text-orange { color: orange; }
+
 .navbar-collapse {
     clear: both;
     float: right;
@@ -153,12 +199,12 @@ textarea {
 }
 
 /* footer */
-.site-footer {
+/*.site-footer {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-}
+}*/
 .footer-copyright {
     text-align: left;
     line-height: 1.6; 
