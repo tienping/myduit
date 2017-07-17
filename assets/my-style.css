@@ -1,3 +1,7 @@
+html, body {
+    overflow-x:hidden 
+}
+
 body {
     font-size: 15px;
     line-height: 2;
@@ -114,7 +118,7 @@ textarea {
   background-color: #eeeeee;
 }
 
-.header-top{
+.header-top {
 	background-color: #f78f27;
 	overflow: hidden;
 	font-size: 14px;
@@ -124,14 +128,24 @@ textarea {
     left: 0;
     right: 0;
     color: #fff;
+    z-index: 30;
+    border-bottom: 1px solid brown;
 }
+@media(max-width: 375px) { .header-top { padding: 3px 0; } }
 .header-top .hotline {
     max-width: 350px;
     float: right;
 }
-.header-top .translation-select-div {
-	float: left;
-	line-height: 1;
+@media(min-width: 375px) and (max-width: 9999px) {
+    #responsive-menu-button {
+        zoom: 0.8;
+        top: 13px!important;
+    }
+}
+@media(min-width: 375px) {
+    .header-top .hotline {
+        margin-right: 3rem;
+    }
 }
 .header-top .translation-select {
     background: transparent;
@@ -139,33 +153,27 @@ textarea {
     padding: 2px 5px;
     font-size: 12px;
 }
-.header-top .translation-select option {
-    background-color: #f78f27;
-}
-.header-top .contact-me-text-div {
-	float: right;
-}
-.header-top .contact-me-text {
-    list-style-type: none;
-    float: right;
-    margin: 0;
-    line-height: 1;
-    padding: 0;
-}
-.header-top .contact-me-text li {
-    display: inline-block;
-    margin: 0;
-    padding: 2px 20px;
-    border-left: 1px solid;
-}
-.header-top .contact-me-text li a {
-    color: #fff;
+
+@media(min-width: 375px) {
+    .header-top .translation-select-div,
+    .header-top .contact-me-text-div {
+        display: inline-block;
+    }
+
+    .header-top .translation-select-div {
+        padding-right: 1rem;
+    }
+    .header-top .contact-me-text-div {
+        padding-left: 1rem;
+        border-left: 2px solid white;
+    }
 }
 
 
 .header-middle {
     margin-top: 3rem;
 }
+@media(max-width: 350px) { .header-middle { margin-top: 4rem; } }
 .header-middle .navigation-menu{
 	padding: 31px 15px;
 }
@@ -195,7 +203,7 @@ textarea {
 
 /* site-content */
 .site-content {
-    min-height: 400px;
+    min-height: 200px;
 }
 
 /* footer */
@@ -214,12 +222,13 @@ textarea {
 
 .footer-contact {
     text-align: right;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bold;
-    margin-top: 10px;
+    line-height: 2.5rem;
 }
 .footer-contact .fa { color: #f78f27; }
 .footer-contact a { color: #f78f27; }
+@media(max-width: 767px) { .footer-contact { font-size: 22; } }
 
 /* scroll-to-top */
 .scroll-to-top {
