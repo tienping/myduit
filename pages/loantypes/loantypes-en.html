@@ -1,4 +1,4 @@
-<div class="page-loantypes page-loantypes-en">
+<div class="page-loantypes page-loantypes-en" ng-init="myduit.init();">
     <div class="page-featured-banner" style="background-image:url('pages/loantypes/img/banner-01-01.jpg')">
         <div class="container">
             <h1 class="text-uppercase">Types of Loan</h1>
@@ -10,9 +10,13 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h3>
-                            <a href="#loan_1" class="nsanchor">Personal Loan</a><br>
-                            <a href="#loan_2" class="nsanchor">Business Loan</a><br>
-                            <a href="#loan_3" class="nsanchor">Mortgage Loan</a><br>
+                            <a href="@@loan_1" class="nsanchor">Personal Loan</a><br>
+                            <a href="@@loan_2" class="nsanchor">Business Loan</a><br>
+                            <a href="@@loan_3" class="nsanchor">Mortgage Loan</a><br>
+
+                            <!--<a ng-click="myduit.scrollTo('#loan_1');" class="nsanchor">Personal Loan</a><br>
+                            <a ng-click="myduit.scrollTo('#loan_2');" class="nsanchor">Business Loan</a><br>
+                            <a ng-click="myduit.scrollTo('#loan_3');" class="nsanchor">Mortgage Loan</a><br>-->
                         </h3>
                     </div>
                 </div>
