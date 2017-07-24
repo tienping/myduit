@@ -105,11 +105,8 @@
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
-    color: rgb(239, 143, 100);
     font-family: Comfortaa;
     text-transform: uppercase;
-    background-color: rgb(255, 255, 255);
-    border-color: rgb(0, 0, 0);
     border-radius: 3px;
     outline: none;
     box-shadow: none;
@@ -187,4 +184,16 @@
 
 .home-section-3 ul li {
     text-align: center;
+}
+
+
+/*modal*/
+.warningmsg {
+    color: #da0000;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    border: 1px solid #da0000;
+    padding: 10px 10px;
+    line-height: 1.5;
 }

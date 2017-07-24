@@ -21,7 +21,15 @@
 
     }).controller('myduitCtrl', myduitCtrl);
 
+    myduitCtrl.$inject = [];
+
     function myduitCtrl() {
         var myduit = this;
+        
+        myduit.openModal = openModal;
+        
+        function openModal(id) {
+            $('#' + id).modal('show');
+        }
     }
 })();

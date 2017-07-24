@@ -18,6 +18,8 @@ h3 {
     margin: 0 0 20px;
 }
 
+h3.white { color: #FFF; }
+
 p {
     line-height: 1.6;
     margin-bottom: 20px;
@@ -32,6 +34,11 @@ a {
     transition: all 0.3s;
     cursor:pointer;
 }
+a:hover,
+a:focus {
+  color: #DADADA;
+  text-decoration: none;
+}
 
 button,
 input,
@@ -44,7 +51,7 @@ textarea {
 }
 
 .btn.btn-default {
-	border: 1px solid #f78f27;
+	border: 2px solid #f78f27;
     color: #fff;
     border-radius: 5px;
     background-color: #f78f27;
@@ -58,23 +65,32 @@ textarea {
 .btn.btn-default.white{
 	color: #f78f27;
 	background-color: #fff;
-	border: 1px solid #fff;
+	border: 2px solid #fff;
 }
 
 .btn.btn-default:hover, .wpcf7-submit:hover{
-	border: 1px solid #f78f27;
+	border: 2px solid #f78f27;
     color: #f78f27;
     background-color: transparent;
 }
 
 .btn.btn-default.white:hover{
 	color: #fff;
+    border: 2px solid #fff;
 	background-color: #f78f27;
-	border: 1px solid #fff;
 }
 
 .text-white { color: white; }
 .text-orange { color: orange; }
+
+
+.page-featured-banner{ background-size: cover; }
+.page-featured-banner h1{
+	text-align: left;
+    padding: 26px 0;
+    font-weight: bold;
+    color: #fff;
+}
 
 .navbar-collapse {
     clear: both;
@@ -205,6 +221,12 @@ textarea {
     min-height: 200px;
 }
 
+.site-footer {
+    color: #000;
+    padding: 34px 0;
+    background-color: #fbfbf0;
+}
+
 /* footer */
 /*.site-footer {
     position: fixed;
@@ -253,4 +275,24 @@ textarea {
 .scroll-to-top:hover {
   background: #222;
   opacity: .8;
+}
+
+/*modal*/
+.modal.page-middle-mode {
+   text-align: center;
+   padding: 0!important;
+
+    
+}
+.modal.page-middle-mode:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px; /* Adjusts for spacing */
+}
+.modal.page-middle-mode .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
 }
