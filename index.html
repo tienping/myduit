@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="lib/fonts-googleapis-comfortaa-400-700-v4-7-3.css" type="text/css">
         <link rel="stylesheet" href="lib/fonts-googleapis-comfortaa-700.css" type="text/css">
     </head>
-    <body ng-app="myduitApp" ng-controller="myduitCtrl as myduit">
+    <body ng-app="myduitApp" ng-controller="myduitCtrl as myduit" ng-init="myduit.openModal('page-init-modal'); myduit.init();">
         <button id="responsive-menu-button"
                 class="responsive-menu-button responsive-menu-accessible responsive-menu-boring" 
                 type="button" aria-label="Menu"
@@ -29,7 +29,7 @@
                 ng-class="{ 'is-active': myduit.showMenu }">
             <span class="responsive-menu-box"><span class="responsive-menu-inner"></span></span>
         </button>
-        <div id="responsive-menu-container" class=""
+        <div id="responsive-menu-container" class="slide-left"
              ng-class="{ 'slide-left': !myduit.showMenu }">
             <div id="responsive-menu-wrapper" class="p-a-3">
                 <ul id="responsive-menu" class="">
@@ -51,11 +51,16 @@
                     <div class="col-xs-12 col-md-6 operating-hours"></div>
                     <div class="col-xs-12 col-md-6 hotline">
                         <div class="text-xs-center text-md-right">
-                            <div class="translation-select-div" ng-show="false">
-                                <select class="translation-select">
-                                    <option value="http://firstcredits.net/bm/mohon-sekarang/">Bahasa Melayu</option>
-                                    <option value="http://firstcredits.net/en/apply-now/">English</option>
-                                </select>
+                            <div class="translation-select-div">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="translation-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span ng-bind="myduit.currentLanguage == 'en' ? 'English' : 'Bahasa Melayu';"></span>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="translation-dropdown">
+                                        <a ng-if="myduit.currentLanguage == 'en'" ng-click="myduit.toggleLanguage('bm');" class="dropdown-item">Bahasa Melayu</a>
+                                        <a ng-if="myduit.currentLanguage == 'bm'" ng-click="myduit.toggleLanguage('en');" class="dropdown-item">English</a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="contact-me-text-div">
                                 <div class="contact-me-text">
@@ -126,7 +131,9 @@
         <script src="lib/angular-ui-router.min.js"></script>
         <script src="lib/tether/dist/js/tether.js"></script>
         <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="assets/app.js"></script>
+        <script src="assets/load-json.js"></script>
+        <script src="assets/cookie.js"></script>
         <script src="assets/smooth-scroll.js"></script>
+        <script src="assets/app.js"></script>
     </body>
 </html>

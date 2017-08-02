@@ -146,13 +146,14 @@ textarea {
     color: #fff;
     z-index: 30;
     border-bottom: 1px solid brown;
+    overflow: visible;
 }
 .header-top .hotline {
     max-width: 350px;
     float: right;
 }
 .header-top .translation-select {
-    background: transparent;
+    background: #f78f27;
     border: 1px solid;
     padding: 2px 5px;
     font-size: 12px;
@@ -188,7 +189,25 @@ textarea {
 	border-top: 2px solid #f26222;
 	border-bottom: 2px solid #f26222;
 }
+.header-top .translation-select-div .dropdown button,
+.header-top .translation-select-div .dropdown-menu {
+    font-size: 0.75rem;
+    border-color: white;
+    background-color: #f78f27;
+    border-radius: 0;
+    color: white;
+}
+.header-top .translation-select-div .dropdown button { padding: 0.2rem 0.4rem; }
+.header-top .translation-select-div .dropdown-menu {
+    margin-top: -1px;
+    min-width: 148px;
+}
 
+.header-top .translation-select-div .dropdown-item { color: white; font-weight: bold; }
+.header-top .translation-select-div .dropdown-item:hover {
+    color: #f26222;
+    background-color: white;
+}
 
 
 #responsive-menu-button { top: 13px!important; }
