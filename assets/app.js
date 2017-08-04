@@ -10,7 +10,7 @@
     function myduitConfig($stateProvider, $urlRouterProvider) {
         var lang = getCookie('tp-lang') || 'en';
 
-        $urlRouterProvider.otherwise('/home_' + lang);
+        $urlRouterProvider.otherwise('/home');
 
         $stateProvider.state('home', {
             url: '/home',

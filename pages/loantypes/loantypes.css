@@ -1,8 +1,6 @@
 .loan-section-1{
 	background-color: #fff;
 }
-
-
 .loan-section-1 h3{
 	text-align: center;
 	display: -webkit-box;
@@ -12,13 +10,43 @@
 	display: flex;
 	margin: 0;
 }
-
 .loan-section-1 h3 a{
 	color: #f78f27;
 	display: inline-block;
 	width: 33.3333%;
 	border-right: 1px solid #f78f27;
 	padding: 0 10px;
+}
+
+.loan-section {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+	.loan-section {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	.loan-section-1 h3{
+		flex-flow: row wrap;
+		font-size: 1.2em;
+	}
+
+	.loan-section-1 h3 a{
+		width: 100%;
+		border: 1px solid;
+    	padding: 15px;
+    	margin-bottom: 5px;
+	}
+
+	.page-loantypes .btn.btn-default {
+		max-width: 100%;
+		padding: 11px 30px;
+		font-size: 14px;
+		width: 100%;
+	}
 }
 
 .loan-section-1 h3 a:last-child{

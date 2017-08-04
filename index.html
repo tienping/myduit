@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>MyDuit - myduit.com</title>
+
         <link  href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
         <link  href="lib/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link  href="assets/extra.css" rel="stylesheet">
@@ -21,7 +23,7 @@
         <link rel="stylesheet" href="lib/fonts-googleapis-comfortaa-400-700-v4-7-3.css" type="text/css">
         <link rel="stylesheet" href="lib/fonts-googleapis-comfortaa-700.css" type="text/css">
     </head>
-    <body ng-app="myduitApp" ng-controller="myduitCtrl as myduit" ng-init="myduit.openModal('page-init-modal'); myduit.init();">
+    <body ng-app="myduitApp" ng-controller="myduitCtrl as myduit" ng-init="myduit.openModal('page-init-modal');">
         <button id="responsive-menu-button"
                 class="responsive-menu-button responsive-menu-accessible responsive-menu-boring" 
                 type="button" aria-label="Menu"
@@ -34,13 +36,19 @@
             <div id="responsive-menu-wrapper" class="p-a-3">
                 <ul id="responsive-menu" class="">
                     <li id="responsive-menu-item-home" class="responsive-menu-item" ui-sref-active="responsive-menu-current-item">
-                        <a ng-click="myduit.showMenu = !myduit.showMenu" ui-sref="home" class="responsive-menu-item-link">Home</a>
+                        <a ng-click="myduit.showMenu = !myduit.showMenu" ui-sref="home" class="responsive-menu-item-link">
+                            <span ng-bind="myduit.currentLanguage == 'en' ? 'Home' : 'Laman Utama'"></span>
+                        </a>
                     </li>
                     <li id="responsive-menu-item-loantypes" class="responsive-menu-item" ui-sref-active="responsive-menu-current-item">
-                        <a ng-click="myduit.showMenu = !myduit.showMenu" ui-sref="loantypes" class="responsive-menu-item-link">Types of Loan</a>
+                        <a ng-click="myduit.showMenu = !myduit.showMenu" ui-sref="loantypes" class="responsive-menu-item-link">
+                            <span ng-bind="myduit.currentLanguage == 'en' ? 'Types of Loan' : 'Jenis Loan'"></span>
+                        </a>
                     </li>
                     <li id="responsive-menu-item-apply" class="responsive-menu-item" ui-sref-active="responsive-menu-current-item">
-                        <a ng-click="myduit.showMenu = !myduit.showMenu" ui-sref="apply" class="responsive-menu-item-link">Apply Now</a>
+                        <a ng-click="myduit.showMenu = !myduit.showMenu" ui-sref="apply" class="responsive-menu-item-link">
+                            <span ng-bind="myduit.currentLanguage == 'en' ? 'Apply Now' : 'Mohon Sekarang'"></span>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -50,7 +58,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-6 operating-hours"></div>
                     <div class="col-xs-12 col-md-6 hotline">
-                        <div class="text-xs-center text-md-right">
+                        <div class="action-in-header text-xs-center text-md-right">
                             <div class="translation-select-div">
                                 <div class="dropdown">
                                     <button class="btn btn-secondary dropdown-toggle" type="button" id="translation-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -76,23 +84,26 @@
                 </div>
             </div>
         </div>
-        <div class="header-middle p-t-2">
+        <div class="header-middle p-t-3">
         	<div class="container">
                 <div class="row">
                     <div id="logo" class="col-xs-12 col-md-4 text-xs-center">
                         <a href="/">
-                            <img src="images/myduit-logo.jpg" width="170" alt="First Credit">
+                            <img src="images/myduit-logo-long.jpg" width="170" alt="First Credit">
                         </a>
                     </div>
                     <div class="navigation-menu col-sm-8 hidden-sm-down">
                         <nav class="navbar-collapse collapse navbar-ex1-collapse">
                             <ul id="menu-main-menu" class="nav navbar-nav">
-                                <li ui-sref-active="active" class="menu-item-home"><a title="Home" ui-sref="home">Home</a></li>
-                                <li ui-sref-active="active" class="menu-item-loantypes"><a title="Types of Loan" ui-sref="loantypes">Types of Loan</a></li>
-                                <li ui-sref-active="active" class="menu-item-apply"><a title="Apply Now" ui-sref="apply">Apply Now</a></li>
-                                <!--<li id="menu-item-12" class="menu-item-home menu-item-12"><a title="Home" href="http://firstcredits.net/en/">Home</a></li>
-                                <li id="menu-item-60" class="menu-item-60"><a title="Types of Loan" href="http://firstcredits.net/en/jenis-pinjaman/">Types of Loan</a></li>
-                                <li id="menu-item-61" class="current-menu-item page_item page-item-53 current_page_item menu-item-61 active"><a title="Apply Now" href="http://firstcredits.net/en/mohon-sekarang/">Apply Now</a></li>-->
+                                <li ui-sref-active="active" class="header-menu menu-item-home"><a title="Home" ui-sref="home">
+                                    <span ng-bind="myduit.currentLanguage == 'en' ? 'Home' : 'Laman Utama'"></span>
+                                </a></li>
+                                <li ui-sref-active="active" class="header-menu menu-item-loantypes"><a title="Types of Loan" ui-sref="loantypes">
+                                    <span ng-bind="myduit.currentLanguage == 'en' ? 'Types of Loan' : 'Jenis Loan'"></span>
+                                </a></li>
+                                <li ui-sref-active="active" class="header-menu menu-item-apply"><a title="Apply Now" ui-sref="apply">
+                                    <span ng-bind="myduit.currentLanguage == 'en' ? 'Apply Now' : 'Mohon Sekarang'"></span>
+                                </a></li>
                             </ul>
                         </nav>
                     </div>
@@ -100,17 +111,28 @@
             </div>
         </div>
         <div class="site-content">
-            <section class="_main-ui-view _content p-t-1" ui-view></section>
+            <section class="_main-ui-view _content p-t-3" ui-view></section>
         </div>
 
         <div class="site-footer p-y-3">
             <div class="container">
                 <div class="row">                                          
                     <div class="footer-copyright col-xs-12 col-md-4 text-xs-center text-lg-left">
-                        <div>Permit No: WP5150/10/01-6/290517<br> License No: WL5150/10/01-6/290517 issued by KPKT</div><div>Copyright ©2017 All rights reserved.</div>
+                        <div ng-if="myduit.currentLanguage == 'en'">
+                            Permit No: WP5150/10/01-6/290517<br> 
+                            License No: WL5150/10/01-6/290517 issued by KPKT<br>
+                            Copyright ©2017 All rights reserved.
+                        </div>
+                        <div ng-if="myduit.currentLanguage == 'bm'">
+                            No Permit: WP5150/10/01-6/290517
+                            No. Lesen: WL5150/10/01-6/290517 dikeluarkan oleh KPKT
+                            ©2017. Semua hak terpelihara kepada First Credit.
+                        </div>
                     </div>
                     <div style="line-height:1.4;padding:10px;" id="footer-address" class="col-xs-12 col-md-4 text-xs-center text-lg-left">
-                        15, Lorong Brunei 3, <br>Pudu, 55100 Cheras, <br>Wilayah Persekutuan Kuala Lumpur
+                        15, Lorong Brunei 3, <br>
+                        Pudu, 55100 Cheras, <br>
+                        Wilayah Persekutuan Kuala Lumpur
                     </div>
                     <div class="footer-contact col-xs-12 col-md-4 text-xs-center">
                         <div>
