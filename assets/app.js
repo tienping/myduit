@@ -1,12 +1,13 @@
 (function() {
     'use strict';
-    var myduitApp = angular.module('myduitApp', ['ui.router']);
+    var myduitApp = angular.module('myduitApp', ['ui.router', 'rzModule']);
 
     myduitApp
         .config(myduitConfig)
         .controller('myduitCtrl', myduitCtrl);
 
     myduitConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
+
     function myduitConfig($stateProvider, $urlRouterProvider) {
         var lang = getCookie('tp-lang') || 'en';
 
@@ -27,8 +28,8 @@
 
     }
 
-    myduitCtrl.$inject = [];
-    function myduitCtrl() {
+    myduitCtrl.$inject = ['$scope'];
+    function myduitCtrl($scope) {
         var myduit = this;
         
         myduit.init           = init;
@@ -47,6 +48,15 @@
         //     myduit.data.bm = JSON.parse(response);
         // });
         // myduit.lang      = myduit.lang || 'en';
+
+        $scope.slider = {
+            value: 500,
+            options: {
+                floor: 500,
+                ceil: 3000,
+                step: 500
+            }
+        };
 
         function init() {
             var offsetValue = 50;
