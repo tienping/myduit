@@ -82,6 +82,8 @@ textarea {
 
 .text-white { color: white; }
 .text-orange { color: orange; }
+.bg-white { background-color: white; }
+.bg-orange { background-color: orange; }
 
 
 .page-featured-banner{ background-size: cover; }

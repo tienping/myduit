@@ -83,25 +83,27 @@
                 <div class="row">
                     <div class="col-md-12">
                     <h3 class="capitalize">Interest Rate</h3>
-
-                    <h5 ng-class="{ 'text-warning': slider.value >= 2500 }">I need <span ng-bind="slider.value | currency: 'RM'"></span></h5>
-                    <div class="p-y-2">
-                        <rzslider
-                            rz-slider-model="slider.value"
-                            rz-slider-options="slider.options"
-                        ></rzslider>
-                    </div>
-                    <h5>Total payback <span ng-bind="slider.value * 1.015 | currency: 'RM' "></span></h5>
-
-
-                    <p>With mortgage monthly interest rate 1%, without mortgage monthly interest rate 1.5% | With mortgage yearly interest rate 12%, without mortgage yearly interest rate 18%.<br>
-                    Minimum repayment: 6 months; Maximum repayment: 60 months.</p>
+    
+                    <div>Monthly interest rate 1.5%</div>
+                    <!-- <div>With mortgage monthly interest rate 1%, without mortgage monthly interest rate 1.5%</div>
+                    <div>With mortgage yearly interest rate 12%, without mortgage yearly interest rate 18%.</div>
+                    <div>Minimum repayment: 6 months; Maximum repayment: 60 months.</div> -->
                     <div class="my-box">
-                    <h4>Example</h4>
-                    <p>Amount of credit RM 5000 borrowed for 180 days.<br>
-                    Interest: RM488<br>
-                    Total amount payable: RM5448
-                    </p></div>
+                        <div>
+                            Amount of credit 
+                            <h5 class="bg-white" ng-class="slider.value >= 2500 ? 'text-warning' : 'text-info'" ng-bind="slider.value | currency: 'RM'"></h5>
+                            borrowed for 30 days.
+                        </div>
+                        <div class="p-y-2">
+                            <rzslider
+                                rz-slider-model="slider.value"
+                                rz-slider-options="slider.options"
+                            ></rzslider>
+                        </div>
+                        <div>
+                            Total payback 
+                            <h5 class="bg-white text-success"ng-bind="slider.value * 1.015 | currency: 'RM' "></h5>
+                        </div>
                     </div>
                 </div>
             </div>
