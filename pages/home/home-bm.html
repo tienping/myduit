@@ -2,9 +2,21 @@
     <div class="owl-slider">
         <div class="slider-slide slider-1" style="background-image: url('pages/home/img/owl-slider-01.png');">
             <div class="float-container text-xs-center">
-                <div class="details p-x-3">
-                    <div class="caption m-b-1">
-                        mengapa bayar deposit / yuran perkhidmatan apabila anda ingin memohon pinjaman? 
+                <div class="details my-box p-a-2">
+                    <div>
+                        Perjaman berjumlah 
+                        <h5 class="bg-white" ng-class="slider.value >= 2500 ? 'text-warning' : 'text-info'" ng-bind="slider.value | currency: 'RM'"></h5>
+                        untuk 30 hari.
+                    </div>
+                    <div class="p-y-1">
+                        <rzslider
+                            rz-slider-model="slider.value"
+                            rz-slider-options="slider.options"
+                        ></rzslider>
+                    </div>
+                    <div>
+                        Jumlah bayaran 
+                        <h5 class="bg-white text-success"ng-bind="slider.value * 1.015 | currency: 'RM' "></h5>
                     </div>
                     <a ui-sref="apply" class="btn btn-default btn-lg white cta"> Mohon Sekarang </a>
                 </div>

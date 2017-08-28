@@ -99,27 +99,3 @@
 .loan-section-5{
 	background-color: #fff;
 }
-
-.loan-section-5 .my-box{
-	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-    max-width: 500px;
-    margin: auto;
-    padding: 30px;
-    background-color: #f78f27;
-    color: #fff;
-}
-
-.loan-section-5 .my-box h5 {
-	color: #fff;
-	display: inline-block;
-	padding: .25rem .5rem;
-	line-height: 1.75rem;
-	min-width: 125px;
-	text-align: left;
-	font-weight: bold;
-}
-
-.loan-section-5 .my-box .rzslider .rz-bubble {
-	color: white;
-}
