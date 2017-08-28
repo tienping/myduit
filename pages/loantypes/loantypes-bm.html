@@ -78,21 +78,29 @@
                 </div>
             </div>
         </section>
+
         <section class="loan-section loan-section-5 text-xs-center">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="capitalize">Kadar Faedah</h3>
-                        <p>Cagaran 1% bulanan, tanpa cagaran 1.5% bulanan | Cagaran 12% tahunan, tanpa cagaran 18% tahunan. Tempoh bayaran balik minimum 6 bulan, maksimum 60 bulan</p>
-                        <div class="my-box">
-                            <h4>CONTOH</h4>
-                            <p>
-                                Pinjaman berjumlah RM5000 untuk 180 hari.
-                                <br>
-                                Faedah: RM488
-                                <br>
-                                Jumlah pembayaran pinjaman: RM5448
-                            </p>
+                    <h3 class="capitalize">Kadar Faedah</h3>
+    
+                    <div>Kadar faedah sebulan 1.5%</div>
+                    <div class="my-box">
+                        <div>
+                            Perjaman berjumlah  
+                            <h5 class="bg-white" ng-class="slider.value >= 2500 ? 'text-warning' : 'text-info'" ng-bind="slider.value | currency: 'RM'"></h5>
+                            untuk 30 hari.
+                        </div>
+                        <div class="p-y-2">
+                            <rzslider
+                                rz-slider-model="slider.value"
+                                rz-slider-options="slider.options"
+                            ></rzslider>
+                        </div>
+                        <div>
+                            Jumlah bayaran 
+                            <h5 class="bg-white text-success"ng-bind="slider.value * 1.015 | currency: 'RM' "></h5>
                         </div>
                     </div>
                 </div>
