@@ -28,8 +28,8 @@
 
     }
 
-    myduitCtrl.$inject = ['$scope'];
-    function myduitCtrl($scope) {
+    myduitCtrl.$inject = ['$scope', '$rootScope'];
+    function myduitCtrl($scope, $rootScope) {
         var myduit = this;
         
         myduit.init           = init;
@@ -57,6 +57,10 @@
                 step: 500
             }
         };
+
+        $rootScope.$on('$stateChangeSuccess', function() {
+            // route change success handling
+        });
 
         function init() {
             var offsetValue = 50;
