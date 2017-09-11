@@ -5787,7 +5787,7 @@ a.text-success:focus, a.text-success:hover {
 }
 
 .text-info {
-  color: #5bc0de !important;
+  color: #000 !important;
 }
 
 a.text-info:focus, a.text-info:hover {
@@ -5795,7 +5795,7 @@ a.text-info:focus, a.text-info:hover {
 }
 
 .text-warning {
-  color: #f0ad4e !important;
+  color: rgb(238, 255, 62) !important;
 }
 
 a.text-warning:focus, a.text-warning:hover {
