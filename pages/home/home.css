@@ -28,6 +28,11 @@
     transform: translateY(-50%);
     min-width: 90%;
 }
+@media(max-width: 767px) {
+    .owl-slider .float-container .details {
+        transform: initial;
+    }
+}
 
 .owl-slider .slider-slide .float-container {
     position: absolute;
@@ -49,6 +54,7 @@
 }
 @media (max-width: 767px) {
     .owl-slider .slider-slide .float-container {
+        top: 0;
         width: 100%;
         min-width: 200px;
         position: relative;
