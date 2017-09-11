@@ -91,7 +91,7 @@
                     <div class="my-box">
                         <div>
                             Amount of credit 
-                            <h5 class="bg-white m-x-1" ng-class="slider.value >= 2500 ? 'text-warning' : 'text-info'" ng-bind="slider.value | currency: 'RM'"></h5>
+                            <h5 ng-class="slider.value >= 2500 ? 'text-warning' : 'text-info'" ng-bind="slider.value | currency: 'RM'"></h5>
                             borrowed for 30 days.
                         </div>
                         <div class="p-y-2">
@@ -103,7 +103,7 @@
                         <hr>
                         <div>
                             Total payback 
-                            <h5 class="bg-white p-l-1 text-success"ng-bind="slider.value * 1.015 | currency: 'RM' "></h5>
+                            <h5 class="text-success" ng-bind="slider.value * 1.015 | currency: 'RM' "></h5>
                         </div>
                     </div>
                 </div>
