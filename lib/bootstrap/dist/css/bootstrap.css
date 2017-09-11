@@ -5787,15 +5787,16 @@ a.text-success:focus, a.text-success:hover {
 }
 
 .text-info {
-  color: #5bc0de !important;
+  color: #fff !important;
 }
 
 a.text-info:focus, a.text-info:hover {
-  color: #31b0d5;
+  color: #fff;
 }
 
 .text-warning {
-  color: #f0ad4e !important;
+  color: ##e9f04e !important;
+  font-size: 20px;
 }
 
 a.text-warning:focus, a.text-warning:hover {
@@ -5830,7 +5831,7 @@ a.bg-primary:focus, a.bg-primary:hover {
 
 .bg-success {
   color: #fff !important;
-  background-color: #5cb85c !important;
+  background-color: #e9f04e  !important;
 }
 
 a.bg-success:focus, a.bg-success:hover {
