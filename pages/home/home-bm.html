@@ -4,8 +4,8 @@
             <div class="float-container text-xs-center">
                 <div class="details my-box p-a-2">
                     <div>
-                        Perjaman berjumlah 
-                        <h5 class="bg-white" ng-class="slider.value >= 2500 ? 'text-warning' : 'text-info'" ng-bind="slider.value | currency: 'RM'"></h5>
+                        Perjaman berjumlah
+                        <h5 class="bg-white text-xs-center m-x-1" ng-class="slider.value >= 2500 ? 'text-warning' : 'text-info'" ng-bind="slider.value | currency: 'RM'"></h5>
                         untuk 30 hari.
                     </div>
                     <div class="p-y-1">
@@ -14,11 +14,12 @@
                             rz-slider-options="slider.options"
                         ></rzslider>
                     </div>
+                    <hr>
                     <div>
-                        Jumlah bayaran 
-                        <h5 class="bg-white text-success"ng-bind="slider.value * 1.015 | currency: 'RM' "></h5>
+                        Jumlah bayaran
+                        <h5 class="bg-white text-xs-center text-success m-l-1"ng-bind="slider.value * 1.015 | currency: 'RM' "></h5>
                     </div>
-                    <a ui-sref="apply" class="btn btn-default btn-lg white cta"> Mohon Sekarang </a>
+                    <a ui-sref="apply" class="btn btn-default btn-lg white cta m-y-1"> Mohon Sekarang </a>
                 </div>
             </div>
         </div>

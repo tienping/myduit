@@ -5,7 +5,7 @@
                 <div class="details my-box p-a-2">
                     <div>
                         Amount of credit 
-                        <h5 class="bg-white" ng-class="slider.value >= 2500 ? 'text-warning' : 'text-info'" ng-bind="slider.value | currency: 'RM'"></h5>
+                        <h5 class="bg-white text-xs-center m-x-1" ng-class="slider.value >= 2500 ? 'text-warning' : 'text-info'" ng-bind="slider.value | currency: 'RM'"></h5>
                         borrowed for 30 days.
                     </div>
                     <div class="p-y-1">
@@ -14,11 +14,12 @@
                             rz-slider-options="slider.options"
                         ></rzslider>
                     </div>
+                    <hr>
                     <div>
                         Total payback 
-                        <h5 class="bg-white text-success"ng-bind="slider.value * 1.015 | currency: 'RM' "></h5>
+                        <h5 class="bg-white text-xs-center text-success m-l-1"ng-bind="slider.value * 1.015 | currency: 'RM' "></h5>
                     </div>
-                    <a ui-sref="apply" class="btn btn-default btn-lg white cta"> Apply Now </a>
+                    <a ui-sref="apply" class="btn btn-default btn-lg white cta m-y-1"> Apply Now </a>
                 </div>
             </div>
         </div>

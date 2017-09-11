@@ -89,7 +89,7 @@
                     <div class="my-box">
                         <div>
                             Perjaman berjumlah  
-                            <h5 class="bg-white" ng-class="slider.value >= 2500 ? 'text-warning' : 'text-info'" ng-bind="slider.value | currency: 'RM'"></h5>
+                            <h5 class="bg-white m-x-1" ng-class="slider.value >= 2500 ? 'text-warning' : 'text-info'" ng-bind="slider.value | currency: 'RM'"></h5>
                             untuk 30 hari.
                         </div>
                         <div class="p-y-2">
@@ -98,9 +98,10 @@
                                 rz-slider-options="slider.options"
                             ></rzslider>
                         </div>
+                        <hr>
                         <div>
                             Jumlah bayaran 
-                            <h5 class="bg-white text-success"ng-bind="slider.value * 1.015 | currency: 'RM' "></h5>
+                            <h5 class="bg-white p-l-1 text-success"ng-bind="slider.value * 1.015 | currency: 'RM' "></h5>
                         </div>
                     </div>
                 </div>
