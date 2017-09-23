@@ -14,11 +14,11 @@ body {
 h3 {
     text-transform: uppercase;
     font-weight: bold;
-    color: #bbebff;
+    color: #38a4cc;
     margin: 0 0 20px;
 }
 
-h3.white { color: #FFF; }
+h3.white { color: #38a4cc; }
 
 p {
     line-height: 1.6;
@@ -181,7 +181,7 @@ textarea {
     }
 }
 .header-middle .navbar-nav>li>a{
-	color: #f26222;
+	color: #38a4cc;
 	background-color: transparent;
 	border-top: 2px solid #fff;
 	border-bottom: 2px solid #fff;
@@ -190,10 +190,10 @@ textarea {
 .header-middle .navbar-nav>li.active>a,
 .header-middle .navbar-nav>li>a:hover,
 .header-middle .navbar-nav>li>a:focus{
-	color: #f26222;
+	color: #38a4cc;
 	background-color: transparent;
-	border-top: 2px solid #f26222;
-	border-bottom: 2px solid #f26222;
+	border-top: 2px solid #bbebff;
+	border-bottom: 2px solid #bbebff;
 }
 .header-top .translation-select-div,
 .header-top .contact-me-text-div {
@@ -223,7 +223,7 @@ textarea {
 
 .header-top .translation-select-div .dropdown-item { color: white; font-weight: bold; }
 .header-top .translation-select-div .dropdown-item:hover {
-    color: #f26222;
+    color: #38a4cc;
     background-color: white;
 }
 
@@ -354,7 +354,7 @@ textarea {
     max-width: 500px;
     margin: auto;
     padding: 30px;
-    background-color: #bbebff;
+    background-color: #38a4cc;
     color: #fff;
 }
 

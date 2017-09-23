@@ -39,7 +39,7 @@
     visibility: inherit;
     z-index: 5;
     border-color: rgba(0, 0, 0, 0.498039);
-    background-color: rgba(252, 228, 92, 0.85098);
+    background-color: #bbebff;
     min-height: 200px;
     max-height: 500px;
     min-width: 500px;
@@ -68,7 +68,7 @@
     font-size: 36px;
     line-height: 40px;
     font-weight: 700;
-    color: rgb(255, 255, 255);
+    color: white;
     font-family: Comfortaa;
     text-transform: uppercase;
     visibility: inherit;
