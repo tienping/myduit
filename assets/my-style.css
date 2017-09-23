@@ -14,7 +14,7 @@ body {
 h3 {
     text-transform: uppercase;
     font-weight: bold;
-    color: #f78f27;
+    color: #bbebff;
     margin: 0 0 20px;
 }
 
@@ -51,10 +51,10 @@ textarea {
 }
 
 .btn.btn-default {
-	border: 2px solid #f78f27;
+	border: 2px solid #bbebff;
     color: #fff;
     border-radius: 5px;
-    background-color: #f78f27;
+    background-color: #bbebff;
     font-size: 18px;
     padding: 11px 60px;
     min-width: 136px;
@@ -63,21 +63,21 @@ textarea {
 	text-transform: uppercase;
 }
 .btn.btn-default.white{
-	color: #f78f27;
+	color: #bbebff;
 	background-color: #fff;
 	border: 2px solid #fff;
 }
 
 .btn.btn-default:hover, .wpcf7-submit:hover{
-	border: 2px solid #f78f27;
-    color: #f78f27;
+	border: 2px solid #bbebff;
+    color: #bbebff;
     background-color: transparent;
 }
 
 .btn.btn-default.white:hover{
 	color: #fff;
     border: 2px solid #fff;
-	background-color: #f78f27;
+	background-color: #bbebff;
 }
 
 .text-white { color: white; }
@@ -137,7 +137,7 @@ textarea {
 }
 
 .header-top {
-	background-color: #f78f27;
+	background-color: #bbebff;
 	overflow: hidden;
 	font-size: 14px;
 	padding: 11px 0;
@@ -154,7 +154,7 @@ textarea {
     float: right;
 }
 .header-top .translation-select {
-    background: #f78f27;
+    background: #bbebff;
     border: 1px solid;
     padding: 2px 5px;
     font-size: 12px;
@@ -211,7 +211,7 @@ textarea {
 .header-top .translation-select-div .dropdown-menu {
     font-size: 0.75rem;
     border-color: white;
-    background-color: #f78f27;
+    background-color: #bbebff;
     border-radius: 0;
     color: white;
 }
@@ -273,7 +273,7 @@ textarea {
     color: #000;
     padding: 34px 0;
     background-color: #fbfbf0;
-    border-top: 2px solid #f78f27;
+    border-top: 2px solid #bbebff;
 }
 
 /* footer */
@@ -296,8 +296,8 @@ textarea {
     font-weight: bold;
     line-height: 2.5rem;
 }
-.footer-contact .fa { color: #f78f27; width: 30px; }
-.footer-contact a { color: #f78f27; text-decoration: underline; }
+.footer-contact .fa { color: #bbebff; width: 30px; }
+.footer-contact a { color: #bbebff; text-decoration: underline; }
 @media(max-width: 767px) { .footer-contact { font-size: 22; } }
 
 /* scroll-to-top */
@@ -354,7 +354,7 @@ textarea {
     max-width: 500px;
     margin: auto;
     padding: 30px;
-    background-color: #f78f27;
+    background-color: #bbebff;
     color: #fff;
 }
 
