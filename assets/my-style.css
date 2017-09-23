@@ -36,7 +36,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #DADADA;
+  color: #207da0;
   text-decoration: none;
 }
 
@@ -51,10 +51,10 @@ textarea {
 }
 
 .btn.btn-default {
-	border: 2px solid #bbebff;
+	border: 2px solid #38a4cc;
     color: #fff;
     border-radius: 5px;
-    background-color: #bbebff;
+    background-color: #38a4cc;
     font-size: 18px;
     padding: 11px 60px;
     min-width: 136px;
@@ -69,15 +69,15 @@ textarea {
 }
 
 .btn.btn-default:hover, .wpcf7-submit:hover{
-	border: 2px solid #bbebff;
-    color: #bbebff;
-    background-color: transparent;
+    border: 2px solid #1d7ea3;
+    color: white;
+    background-color: #207da0;
 }
 
 .btn.btn-default.white:hover{
-	color: #fff;
-    border: 2px solid #fff;
-	background-color: #bbebff;
+    border: 2px solid #1d7ea3;
+    color: white;
+    background-color: #207da0;
 }
 
 .text-white { color: #38a4cc; }
@@ -296,7 +296,7 @@ textarea {
     font-weight: bold;
     line-height: 2.5rem;
 }
-.footer-contact .fa { color: #38a4cc; width: 30px; }
+.footer-contact .fa { color: #38a4cc; padding-right: 6px; /*width: 30px;*/ }
 .footer-contact a { color: #38a4cc; text-decoration: underline; }
 @media(max-width: 767px) { .footer-contact { font-size: 22; } }
 

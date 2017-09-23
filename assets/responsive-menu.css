@@ -220,7 +220,7 @@ button#responsive-menu-button, #responsive-menu-container {
   #responsive-menu-container {
     width: 75%;
     left: 0;
-    background: #38a4cc;
+    background: #207da0;
     transition: transform 0.5s;
     text-align: left; }
     #responsive-menu-container #responsive-menu-wrapper {
@@ -263,21 +263,21 @@ button#responsive-menu-button, #responsive-menu-container {
         vertical-align: middle;
         margin-right: 15px; }
     #responsive-menu-container #responsive-menu > li.responsive-menu-item:first-child > a {
-      border-top: 1px solid #38a4cc; }
+      border-top: 2px solid #207da0; }
       #responsive-menu-container #responsive-menu li.responsive-menu-item .responsive-menu-item-link {
         font-size: 13px; }
         #responsive-menu-container #responsive-menu li.responsive-menu-item a {
           line-height: 44px;
-          border-bottom: 1px solid #38a4cc;
+          border-bottom: 1px solid #bbebff;
           color: #fff;
-          background-color: #38a4cc; }
+          background-color: #207da0 }
           #responsive-menu-container #responsive-menu li.responsive-menu-item a:hover {
             color: #fff;
             background-color: #f78f27;
-            border-color: #38a4cc; }
+            border-color: #bbebff; }
             #responsive-menu-container #responsive-menu li.responsive-menu-item a:hover .responsive-menu-subarrow {
               color: #fff;
-              border-color: #3f3f3f;
+              border-color: #bbebff;
               background-color: #3f3f3f; }
           #responsive-menu-container #responsive-menu li.responsive-menu-item a .responsive-menu-subarrow {
             right: 0;
@@ -285,34 +285,33 @@ button#responsive-menu-button, #responsive-menu-container {
             line-height: 40px;
             width: 40px;
             color: #fff;
-            border-left: 1px solid #38a4cc;
+            border-left: 1px solid #bbebff;
             background-color: #38a4cc; }
             #responsive-menu-container #responsive-menu li.responsive-menu-item a .responsive-menu-subarrow.responsive-menu-subarrow-active {
               color: #fff;
-              border-color: #38a4cc;
+              border-color: #bbebff;
               background-color: #38a4cc; }
               #responsive-menu-container #responsive-menu li.responsive-menu-item a .responsive-menu-subarrow.responsive-menu-subarrow-active:hover {
                 color: #fff;
-                border-color: #3f3f3f;
+                border-color: #bbebff;
                 background-color: #3f3f3f; }
             #responsive-menu-container #responsive-menu li.responsive-menu-item a .responsive-menu-subarrow:hover {
               color: #fff;
-              border-color: #3f3f3f;
+              border-color: #bbebff;
               background-color: #3f3f3f; }
         #responsive-menu-container #responsive-menu li.responsive-menu-item.responsive-menu-current-item > .responsive-menu-item-link {
           background-color: #38a4cc;
           color: #fff;
-          border-color: #38a4cc; }
+          border-color: #bbebff; }
           #responsive-menu-container #responsive-menu li.responsive-menu-item.responsive-menu-current-item > .responsive-menu-item-link {
                 color: white;
                 background-color: transparent;
-                border-top: 2px solid #f26222;
-                border-bottom: 2px solid #f26222;
+                border-top: 2px solid #bbebff;
+                border-bottom: 2px solid #bbebff;
             }
           #responsive-menu-container #responsive-menu li.responsive-menu-item.responsive-menu-current-item > .responsive-menu-item-link:hover {
-            background-color: #f78f27;
-            color: #fff;
-            border-color: #3f3f3f; } }
+            color: #bbebff;
+            border-color: #bbebff; } }
 
 
 #responsive-menu-container {
