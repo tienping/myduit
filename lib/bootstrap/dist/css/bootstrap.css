@@ -2355,8 +2355,8 @@ fieldset[disabled] a.btn {
 .open > .btn-secondary.dropdown-toggle:focus,
 .open > .btn-secondary.dropdown-toggle.focus {
   color: #373a3c;
-  background-color: #d4d4d4;
-  border-color: #8c8c8c;
+  background-color: #bbebff;
+  border-color: #bbebff;
 }
 
 .btn-secondary.disabled:focus, .btn-secondary.disabled.focus, .btn-secondary:disabled:focus, .btn-secondary:disabled.focus {

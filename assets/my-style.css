@@ -63,7 +63,7 @@ textarea {
 	text-transform: uppercase;
 }
 .btn.btn-default.white{
-	color: #bbebff;
+	color: #38a4cc;
 	background-color: #fff;
 	border: 2px solid #fff;
 }
@@ -80,7 +80,7 @@ textarea {
 	background-color: #bbebff;
 }
 
-.text-white { color: white; }
+.text-white { color: #38a4cc; }
 .text-orange { color: orange; }
 .bg-white { background-color: white; }
 .bg-orange { background-color: orange; }
@@ -147,7 +147,7 @@ textarea {
     right: 0;
     color: #fff;
     z-index: 30;
-    border-bottom: 1px solid brown;
+    box-shadow: 2px 0px #888888;
     overflow: visible;
 }
 .header-top .hotline {
@@ -204,16 +204,16 @@ textarea {
 }
 .header-top .contact-me-text-div {
     padding-left: 1rem;
-    border-left: 2px solid white;
+    border-left: 1px solid #38a4cc;
 }
 
 .header-top .translation-select-div .dropdown button,
 .header-top .translation-select-div .dropdown-menu {
     font-size: 0.75rem;
-    border-color: white;
+    border-color: #bbebff;
     background-color: #bbebff;
     border-radius: 0;
-    color: white;
+    color: #38a4cc;
 }
 .header-top .translation-select-div .dropdown button { padding: 0.2rem 0.4rem; }
 .header-top .translation-select-div .dropdown-menu {
@@ -296,8 +296,8 @@ textarea {
     font-weight: bold;
     line-height: 2.5rem;
 }
-.footer-contact .fa { color: #bbebff; width: 30px; }
-.footer-contact a { color: #bbebff; text-decoration: underline; }
+.footer-contact .fa { color: #38a4cc; width: 30px; }
+.footer-contact a { color: #38a4cc; text-decoration: underline; }
 @media(max-width: 767px) { .footer-contact { font-size: 22; } }
 
 /* scroll-to-top */

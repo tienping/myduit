@@ -200,12 +200,12 @@ button#responsive-menu-button, #responsive-menu-container {
     button#responsive-menu-button {
       width: 44px;
       height: 44px;
-      background: #000;
+      background: #38a4cc;
       position: fixed;
       top: 72px;
       right: 5%; }
       button#responsive-menu-button:hover {
-        background: #000; }
+        background: #38a4cc; }
       button#responsive-menu-button .responsive-menu-box {
         color: #fff; }
     .responsive-menu-label {
