@@ -272,8 +272,7 @@ button#responsive-menu-button, #responsive-menu-container {
           color: #fff;
           background-color: #207da0 }
           #responsive-menu-container #responsive-menu li.responsive-menu-item a:hover {
-            color: #fff;
-            background-color: #f78f27;
+            color: #bbebff;
             border-color: #bbebff; }
             #responsive-menu-container #responsive-menu li.responsive-menu-item a:hover .responsive-menu-subarrow {
               color: #fff;

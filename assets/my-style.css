@@ -221,7 +221,7 @@ textarea {
     min-width: 148px;
 }
 
-.header-top .translation-select-div .dropdown-item { color: white; font-weight: bold; }
+.header-top .translation-select-div .dropdown-item { color: #38a4cc; font-weight: bold; }
 .header-top .translation-select-div .dropdown-item:hover {
     color: #38a4cc;
     background-color: white;
